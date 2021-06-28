@@ -1,0 +1,149 @@
+<!-- Sudoku game done in pure Javascript. No frameworks.-->
+<!-- Author  Randal Holmes  2021                        -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/sudoku.css">
+
+        <script src="scripts/sudoku.js" defer=true></script>
+        <script src="scripts/gameControl.js" defer=true></script>
+
+        <title>Sudoku</title>
+    </head>
+    <body>
+        <div class="gameBoard">
+            <h1>Sudoku</h1>
+            <div id="buttons">
+                <input type="button" value="New Game">
+                <input type="button" value="Hint">
+                <input type="button" value="Validate">
+                <!-- <input type="button" value="Cheat"> -->
+            </div>
+
+            <div>
+                <p id="messageDisplayTitle">Message Display</p>
+                <p id="messageDisplay">&nbsp</p>
+            </div>
+            
+
+            <div class="numberPicker">
+                <span class="number">1</span>
+                <span class="number">2</span>
+                <span class="number">3</span>
+                <span class="number">4</span>
+                <span class="number">5</span>
+                <span class="number">6</span>
+                <span class="number">7</span>
+                <span class="number">8</span>
+                <span class="number">9</span>
+            </div>
+            <br>
+            <div class="gameGrid">
+                <div class="numberRow" id="row-1">
+                    <span class="number">1</span>
+                    <span class="number">2</span>
+                    <span class="number">3</span>
+                    <span class="number">4</span>
+                    <span class="number">5</span>
+                    <span class="number">6</span>
+                    <span class="number">7</span>
+                    <span class="number">8</span>
+                    <span class="number">9</span>
+                </div>
+                <div class="numberRow" id="row-2">
+                    <span class="number">1</span>
+                    <span class="number">2</span>
+                    <span class="number">3</span>
+                    <span class="number">4</span>
+                    <span class="number">5</span>
+                    <span class="number">6</span>
+                    <span class="number">7</span>
+                    <span class="number">8</span>
+                    <span class="number">9</span>
+                </div>
+                <div class="numberRow" id="row-3">
+                    <span class="number">1</span>
+                    <span class="number">2</span>
+                    <span class="number">3</span>
+                    <span class="number">4</span>
+                    <span class="number">5</span>
+                    <span class="number">6</span>
+                    <span class="number">7</span>
+                    <span class="number">8</span>
+                    <span class="number">9</span>
+                </div>
+                <div class="numberRow" id="row-4">
+                    <span class="number">1</span>
+                    <span class="number">2</span>
+                    <span class="number">3</span>
+                    <span class="number">4</span>
+                    <span class="number">5</span>
+                    <span class="number">6</span>
+                    <span class="number">7</span>
+                    <span class="number">8</span>
+                    <span class="number">9</span>
+                </div>
+                <div class="numberRow" id="row-5">
+                    <span class="number">1</span>
+                    <span class="number">2</span>
+                    <span class="number">3</span>
+                    <span class="number">4</span>
+                    <span class="number">5</span>
+                    <span class="number">6</span>
+                    <span class="number">7</span>
+                    <span class="number">8</span>
+                    <span class="number">9</span>
+                </div>
+                <div class="numberRow" id="row-6">
+                    <span class="number">1</span>
+                    <span class="number">2</span>
+                    <span class="number">3</span>
+                    <span class="number">4</span>
+                    <span class="number">5</span>
+                    <span class="number">6</span>
+                    <span class="number">7</span>
+                    <span class="number">8</span>
+                    <span class="number">9</span>
+                </div>
+                <div class="numberRow" id="row-7">
+                    <span class="number">1</span>
+                    <span class="number">2</span>
+                    <span class="number">3</span>
+                    <span class="number">4</span>
+                    <span class="number">5</span>
+                    <span class="number">6</span>
+                    <span class="number">7</span>
+                    <span class="number">8</span>
+                    <span class="number">9</span>
+                </div>
+                <div class="numberRow" id="row-8">
+                    <span class="number">1</span>
+                    <span class="number">2</span>
+                    <span class="number">3</span>
+                    <span class="number">4</span>
+                    <span class="number">5</span>
+                    <span class="number">6</span>
+                    <span class="number">7</span>
+                    <span class="number">8</span>
+                    <span class="number">9</span>
+                </div>
+                <div class="numberRow" id="row-9">
+                    <span class="number">1</span>
+                    <span class="number">2</span>
+                    <span class="number">3</span>
+                    <span class="number">4</span>
+                    <span class="number">5</span>
+                    <span class="number">6</span>
+                    <span class="number">7</span>
+                    <span class="number">8</span>
+                    <span class="number">9</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
